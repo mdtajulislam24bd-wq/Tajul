@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep Navy Primary */
+    --background: 220 50% 5%;
+    --foreground: 0 0% 98%;
+
+    /* Card surfaces - slightly lighter navy */
+    --card: 220 45% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 45% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Gold accent as primary */
+    --primary: 32 100% 58%;
+    --primary-foreground: 220 50% 5%;
+
+    /* Secondary - muted navy */
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted surfaces */
+    --muted: 220 35% 12%;
+    --muted-foreground: 220 15% 60%;
+
+    /* Accent - gold tinted */
+    --accent: 32 80% 50%;
+    --accent-foreground: 220 50% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 32 100% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --navy-deep: 220 50% 5%;
+    --navy-medium: 220 45% 12%;
+    --navy-light: 220 40% 20%;
+    --gold: 32 100% 58%;
+    --gold-light: 40 100% 70%;
+    --gold-dark: 28 100% 45%;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    --gradient-navy: linear-gradient(180deg, hsl(220 50% 5%), hsl(220 45% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 50% 5%) 0%, hsl(220 45% 10%) 50%, hsl(220 40% 15%) 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 4px 30px -5px hsl(32 100% 58% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-elevated: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
+  }
+
+  .dark {
+    --background: 220 50% 5%;
+    --foreground: 0 0% 98%;
+    --card: 220 45% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 45% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 32 100% 58%;
+    --primary-foreground: 220 50% 5%;
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 220 35% 12%;
+    --muted-foreground: 220 15% 60%;
+    --accent: 32 80% 50%;
+    --accent-foreground: 220 50% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 32 100% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+  }
+
+  .bg-gradient-gold {
+    background-image: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+  }
+
+  .bg-gradient-hero {
+    background-image: linear-gradient(135deg, hsl(220 50% 5%) 0%, hsl(220 45% 10%) 50%, hsl(220 40% 15%) 100%);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 30px -5px hsl(32 100% 58% / 0.3);
+  }
+
+  .shadow-gold-lg {
+    box-shadow: 0 10px 50px -10px hsl(32 100% 58% / 0.4);
+  }
+
+  .border-gold-gradient {
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(hsl(220 45% 8%), hsl(220 45% 8%)), 
+                      linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+
+  .stat-glow {
+    @apply relative;
+  }
+
+  .stat-glow::after {
+    content: '';
+    @apply absolute inset-0 rounded-full opacity-30 blur-xl;
+    background: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    z-index: -1;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-pulse-gold {
+    animation: pulseGold 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGold {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(32 100% 58% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 15px hsl(32 100% 58% / 0);
+    }
+  }
+
+  .animate-count {
+    animation: countUp 2s ease-out forwards;
+  }
+}
