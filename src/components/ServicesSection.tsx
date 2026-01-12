@@ -139,11 +139,12 @@ const ServicesSection = () => {
               variant="hero"
               size="xl"
               asChild
-              className="max-w-full h-auto py-3 px-4 sm:h-14 sm:px-10 text-sm sm:text-lg whitespace-normal sm:whitespace-nowrap"
+              className="w-full sm:w-auto h-auto py-4 px-6 md:px-8 text-base sm:text-lg whitespace-normal"
             >
-              <a href="#contact" className="group">
-                Get Custom Quote For Your Business
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform shrink-0" />
+              <a href="#contact" className="group flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
+                <span>Get Custom Quote For Your Business</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 mt-1 sm:mt-0 sm:hidden animate-bounce" />
               </a>
             </Button>
           </motion.div>
