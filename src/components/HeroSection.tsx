@@ -172,7 +172,7 @@ const HeroSection = () => {
             }} transition={{
               delay: 1,
               duration: 0.6
-            }} className="absolute -right-2 md:right-0 top-1/4 glass-card rounded-2xl p-4 shadow-elevated bg-background/80 backdrop-blur-md border border-white/20">
+            }} className="absolute -right-8 md:right-0 top-1/4 glass-card rounded-2xl p-4 shadow-elevated bg-background/80 backdrop-blur-md border border-white/20">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center">
                   <span className="text-xl">📈</span>
