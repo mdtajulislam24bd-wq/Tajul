@@ -172,14 +172,14 @@ const HeroSection = () => {
             }} transition={{
               delay: 1,
               duration: 0.6
-            }} className="absolute -right-4 md:right-0 top-1/4 glass-card rounded-2xl p-4 shadow-elevated">
+            }} className="absolute right-0 md:right-0 top-1/4 z-20 glass-card rounded-2xl p-4 shadow-elevated bg-background/80 backdrop-blur-md border border-white/20">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center">
                   <span className="text-xl">📈</span>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Revenue Generated</p>
-                  <p className="text-xl font-bold text-foreground">$2M+</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Revenue Generated</p>
+                  <p className="text-lg sm:text-xl font-bold text-foreground">$2M+</p>
                 </div>
               </div>
             </motion.div>
@@ -194,14 +194,14 @@ const HeroSection = () => {
             }} transition={{
               delay: 1.2,
               duration: 0.6
-            }} className="absolute -left-4 md:left-0 bottom-1/4 glass-card rounded-2xl p-4 shadow-elevated">
+            }} className="absolute left-0 md:left-0 bottom-1/4 z-20 glass-card rounded-2xl p-4 shadow-elevated bg-background/80 backdrop-blur-md border border-white/20">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center">
                   <span className="text-xl">🎯</span>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Avg. ROAS</p>
-                  <p className="text-xl font-bold text-foreground">3.2X</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Avg. ROAS</p>
+                  <p className="text-lg sm:text-xl font-bold text-foreground">3.2X</p>
                 </div>
               </div>
             </motion.div>
