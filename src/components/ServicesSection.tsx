@@ -96,7 +96,7 @@ const ServicesSection = () => {
 
                   {/* Title */}
                   <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
-                  
+
                   {/* Headline */}
                   <h4 className="text-lg text-primary font-semibold mb-4">{service.headline}</h4>
 
@@ -135,10 +135,15 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-center mt-12"
           >
-            <Button variant="hero" size="xl" asChild>
+            <Button
+              variant="hero"
+              size="xl"
+              asChild
+              className="max-w-full h-auto py-3 px-4 sm:h-14 sm:px-10 text-sm sm:text-lg whitespace-normal sm:whitespace-nowrap"
+            >
               <a href="#contact" className="group">
                 Get Custom Quote For Your Business
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform shrink-0" />
               </a>
             </Button>
           </motion.div>
