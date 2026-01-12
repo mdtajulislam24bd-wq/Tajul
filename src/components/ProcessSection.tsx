@@ -102,10 +102,11 @@ const ProcessSection = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-center mt-16"
           >
-            <Button variant="hero" size="xl" asChild>
-              <a href="#contact" className="group">
-                Book Your Free 45-Minute Audit
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="xl" asChild className="w-full sm:w-auto h-auto py-4 px-6 md:px-8 whitespace-normal">
+              <a href="#contact" className="group flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
+                <span>Book Your Free 45-Minute Audit</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 mt-1 sm:mt-0 sm:hidden animate-bounce" />
               </a>
             </Button>
           </motion.div>
