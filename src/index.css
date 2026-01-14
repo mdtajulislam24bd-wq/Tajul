@@ -17,8 +17,8 @@
     --popover: 220 45% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* Gold accent as primary */
-    --primary: 32 100% 58%;
+    /* Gold accent as primary - NOW TEAL */
+    --primary: 174 90% 41%;
     --primary-foreground: 220 50% 5%;
 
     /* Secondary - muted navy */
@@ -29,8 +29,8 @@
     --muted: 220 35% 12%;
     --muted-foreground: 220 15% 60%;
 
-    /* Accent - gold tinted */
-    --accent: 32 80% 50%;
+    /* Accent - Teal tinted */
+    --accent: 174 80% 40%;
     --accent-foreground: 220 50% 5%;
 
     --destructive: 0 84% 60%;
@@ -38,7 +38,7 @@
 
     --border: 220 30% 18%;
     --input: 220 30% 18%;
-    --ring: 32 100% 58%;
+    --ring: 174 90% 41%;
 
     --radius: 0.75rem;
 
@@ -46,17 +46,17 @@
     --navy-deep: 220 50% 5%;
     --navy-medium: 220 45% 12%;
     --navy-light: 220 40% 20%;
-    --gold: 32 100% 58%;
-    --gold-light: 40 100% 70%;
-    --gold-dark: 28 100% 45%;
-    
+    --gold: 174 90% 41%;
+    --gold-light: 174 90% 60%;
+    --gold-dark: 174 90% 30%;
+
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    --gradient-gold: linear-gradient(135deg, hsl(174 90% 41%), hsl(174 90% 60%));
     --gradient-navy: linear-gradient(180deg, hsl(220 50% 5%), hsl(220 45% 12%));
     --gradient-hero: linear-gradient(135deg, hsl(220 50% 5%) 0%, hsl(220 45% 10%) 50%, hsl(220 40% 15%) 100%);
-    
+
     /* Shadows */
-    --shadow-gold: 0 4px 30px -5px hsl(32 100% 58% / 0.3);
+    --shadow-gold: 0 4px 30px -5px hsl(174 90% 41% / 0.3);
     --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
     --shadow-elevated: 0 25px 50px -12px hsl(0 0% 0% / 0.6);
   }
@@ -68,19 +68,19 @@
     --card-foreground: 0 0% 98%;
     --popover: 220 45% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 32 100% 58%;
-    --primary-foreground: 220 50% 5%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 0%;
     --secondary: 220 40% 15%;
     --secondary-foreground: 0 0% 95%;
     --muted: 220 35% 12%;
     --muted-foreground: 220 15% 60%;
-    --accent: 32 80% 50%;
-    --accent-foreground: 220 50% 5%;
+    --accent: 180 80% 40%;
+    --accent-foreground: 0 0% 0%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 30% 18%;
     --input: 220 30% 18%;
-    --ring: 32 100% 58%;
+    --ring: 180 100% 50%;
   }
 }
 
@@ -97,7 +97,12 @@
     @apply bg-background text-foreground font-inter antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-poppins font-bold tracking-tight;
   }
 }
@@ -105,11 +110,13 @@
 @layer components {
   .text-gradient-gold {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    background-image: linear-gradient(135deg, hsl(180 100% 80%), hsl(180 100% 50%));
+    /* Light to Vibrant Teal for text */
   }
 
   .bg-gradient-gold {
-    background-image: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    background-image: linear-gradient(135deg, hsl(180 100% 50%), hsl(174 90% 41%));
+    /* Vibrant Cyan to Teal */
   }
 
   .bg-gradient-hero {
@@ -117,19 +124,19 @@
   }
 
   .shadow-gold {
-    box-shadow: 0 4px 30px -5px hsl(32 100% 58% / 0.3);
+    box-shadow: 0 4px 30px -5px hsl(180 100% 50% / 0.4);
   }
 
   .shadow-gold-lg {
-    box-shadow: 0 10px 50px -10px hsl(32 100% 58% / 0.4);
+    box-shadow: 0 10px 50px -10px hsl(180 100% 50% / 0.5);
   }
 
   .border-gold-gradient {
     border: 2px solid transparent;
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    background-image: linear-gradient(hsl(220 45% 8%), hsl(220 45% 8%)), 
-                      linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    background-image: linear-gradient(hsl(220 45% 8%), hsl(220 45% 8%)),
+      linear-gradient(135deg, hsl(180 100% 50%), hsl(174 90% 41%));
   }
 
   .glass-card {
@@ -143,7 +150,7 @@
   .stat-glow::after {
     content: '';
     @apply absolute inset-0 rounded-full opacity-30 blur-xl;
-    background: linear-gradient(135deg, hsl(32 100% 58%), hsl(40 100% 70%));
+    background: linear-gradient(135deg, hsl(180 100% 50%), hsl(174 90% 41%));
     z-index: -1;
   }
 }
@@ -154,9 +161,12 @@
   }
 
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-20px);
     }
@@ -167,11 +177,14 @@
   }
 
   @keyframes pulseGold {
-    0%, 100% {
-      box-shadow: 0 0 0 0 hsl(32 100% 58% / 0.4);
+
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 hsl(180 100% 50% / 0.4);
     }
+
     50% {
-      box-shadow: 0 0 0 15px hsl(32 100% 58% / 0);
+      box-shadow: 0 0 0 15px hsl(180 100% 50% / 0);
     }
   }
 
