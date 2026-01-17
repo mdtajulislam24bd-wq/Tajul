@@ -158,7 +158,7 @@ const ContactSection = () => {
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Let's Talk Before You Spend{' '}
-              <span className="text-gradient-gold">Another Taka on Ads</span>
+              <span className="text-gradient-gold">Another Dollar on Ads</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Book a FREE 45-Minute Strategy Call. We'll review your current marketing, identify 3 profit leaks, and build a custom action plan, whether you hire me or not.</p>
           </motion.div>
@@ -213,12 +213,12 @@ const ContactSection = () => {
                         <SelectValue placeholder="Select your budget range" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="under-25k">Under ৳25,000</SelectItem>
-                        <SelectItem value="25k-50k">৳25,000 – ৳50,000</SelectItem>
-                        <SelectItem value="50k-100k">৳50,000 – ৳100,000</SelectItem>
-                        <SelectItem value="100k-250k">৳100,000 – ৳250,000</SelectItem>
-                        <SelectItem value="250k-500k">৳250,000 – ৳500,000</SelectItem>
-                        <SelectItem value="over-500k">Over ৳500,000</SelectItem>
+                        <SelectItem value="under-1k">Under $1,000</SelectItem>
+                        <SelectItem value="1k-3k">$1,000 – $3,000</SelectItem>
+                        <SelectItem value="3k-5k">$3,000 – $5,000</SelectItem>
+                        <SelectItem value="5k-10k">$5,000 – $10,000</SelectItem>
+                        <SelectItem value="10k-20k">$10,000 – $20,000</SelectItem>
+                        <SelectItem value="over-20k">Over $20,000</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

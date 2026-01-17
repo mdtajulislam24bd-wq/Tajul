@@ -124,9 +124,9 @@ const AboutSection = () => {
             <div className="border-gold-gradient rounded-2xl p-8 bg-card">
               <div className="text-5xl text-primary mb-4">"</div>
               <p className="text-lg text-foreground leading-relaxed italic mb-6">
-                "I don't just run ads. I build ecosystems where ৳1 in equals ৳5 out. Most agencies report 'clicks'; I report 'bankable revenue'. If you can't track it, you can't scale it."
+                "I don't just run ads. I build ecosystems where every dollar invested brings measurable returns. Most agencies report 'clicks'; I report 'bankable revenue'. If you can't track it, you can't scale it."
               </p>
-              <p className="text-primary font-semibold">— Tajul Islam</p>
+              <p className="text-primary font-semibold">- Tajul Islam</p>
             </div>
 
             {/* Result Highlight */}

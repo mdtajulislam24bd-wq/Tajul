@@ -64,7 +64,7 @@ const HeroSection = () => {
           }} transition={{
             delay: 0.3
           }} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            I Build <span className="text-gradient-gold">Conversion-Driven Systems</span> That Generate High ROI — Not Just 'Ads'
+            I Build <span className="text-gradient-gold">Conversion-Driven Systems</span> That Generate High ROI : Not Just 'Ads'
           </motion.h1>
 
           {/* Subheadline */}
@@ -77,7 +77,7 @@ const HeroSection = () => {
           }} transition={{
             delay: 0.4
           }} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-            Stop burning money on reach. I implement data-driven funnels (TOF/MOF/BOF) and server-side tracking to turn every ৳1 of ad spend into ৳5+ of revenue.
+            Stop burning money on reach. I implement data-driven funnels (TOF/MOF/BOF) and server-side tracking to turn ad spend into predictable, scalable profit.
           </motion.p>
 
           {/* CTAs */}
