@@ -7,26 +7,26 @@ import { Button } from '@/components/ui/button';
 const steps = [
   {
     week: 'Week 1',
-    title: 'BUSINESS AUDIT',
-    description: "Deep dive into your offer, margins, and current marketing. No ads until we fix the foundation.",
+    title: 'AUDIT & TRACKING',
+    description: "Deep dive into your offer & margins. Setup Server-side Tracking (Pixel/CAPI/GA4) before spending a dime.",
     icon: Search,
   },
   {
     week: 'Week 2',
-    title: 'CAMPAIGN BUILD',
-    description: "Custom ad strategy, high-converting creative, pixel-perfect tracking setup.",
+    title: 'THE SYSTEM BUILD',
+    description: "Building the layout: TOF (Awareness), MOF (Consideration), & BOF (Conversion) ad layers.",
     icon: Rocket,
   },
   {
     week: 'Week 3',
     title: 'LAUNCH & OPTIMIZE',
-    description: "Go live. Daily monitoring. Real-time budget shifts. A/B testing.",
+    description: "Go live. Daily ROAS monitoring. Kill losing ads, scale winners. A/B test creatives.",
     icon: BarChart3,
   },
   {
     week: 'Week 4',
-    title: 'SCALE & SYSTEMATIZE',
-    description: "Identify winning audiences. Build SOPs. Train your team. Plan next quarter.",
+    title: 'SCALE & RETENTION',
+    description: "Scale budget on winning audiences. Implement email/SMS retention systems to increase LTV.",
     icon: TrendingUp,
   },
 ];

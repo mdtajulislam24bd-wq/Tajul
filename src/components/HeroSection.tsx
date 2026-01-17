@@ -3,19 +3,19 @@ import { ArrowRight, Play, CheckCircle2, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import tajulImage from '@/assets/tajul-hero.png';
 const stats = [{
-  value: '3+',
-  label: 'Years Experience'
+  value: '7.5X',
+  label: 'Max ROAS Achieved'
 }, {
   value: '50+',
-  label: 'Businesses Helped'
+  label: 'Businesses Scaled'
 }, {
   value: '$2M+',
   label: 'Revenue Generated'
 }, {
-  value: '3X',
-  label: 'Average ROI'
+  value: '5X+',
+  label: 'Average ROAS'
 }];
-const trustBadges = ['Meta Certified', '50+ Local Businesses', '3X Avg ROI'];
+const trustBadges = ['Meta Certified', 'Server-Side Tracking Expert', '5X Avg ROAS'];
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-hero">
     {/* Background Elements */}
@@ -64,9 +64,7 @@ const HeroSection = () => {
           }} transition={{
             delay: 0.3
           }} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            I Help Local Businesses{' '}
-            <span className="text-gradient-gold">3X Their Revenue</span>{' '}
-            With Meta Ads & Digital Marketing Strategies
+            I Build <span className="text-gradient-gold">Conversion-Driven Systems</span> That Generate High ROI — Not Just 'Ads'
           </motion.h1>
 
           {/* Subheadline */}
@@ -78,7 +76,9 @@ const HeroSection = () => {
             y: 0
           }} transition={{
             delay: 0.4
-          }} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">3+ years. 50+ businesses. $2M+ revenue generated. I don't just run ads I build profit engines that work while you sleep.</motion.p>
+          }} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
+            Stop burning money on reach. I implement data-driven funnels (TOF/MOF/BOF) and server-side tracking to turn every ৳1 of ad spend into ৳5+ of revenue.
+          </motion.p>
 
           {/* CTAs */}
           <motion.div initial={{
@@ -201,7 +201,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Avg. ROAS</p>
-                  <p className="text-lg sm:text-xl font-bold text-foreground">3.2X</p>
+                  <p className="text-lg sm:text-xl font-bold text-foreground">5.2X</p>
                 </div>
               </div>
             </motion.div>
