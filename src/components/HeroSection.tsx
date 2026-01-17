@@ -64,7 +64,10 @@ const HeroSection = () => {
           }} transition={{
             delay: 0.3
           }} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            I Build <span className="text-gradient-gold">Conversion-Driven Systems</span> That Generate High ROI : Not Just 'Ads'
+            I Build <span className="text-gradient-gold">Conversion-Driven Systems</span> That Generate High ROI
+            <span className="block text-primary/80 text-2xl md:text-3xl mt-2 font-medium">
+              Not Just "Ads"
+            </span>
           </motion.h1>
 
           {/* Subheadline */}
